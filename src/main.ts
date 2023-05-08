@@ -1,11 +1,10 @@
-addEventListener('mousedown', e => {
+addEventListener('pointerdown', e => {
     if (e.button !== 1 || !e.altKey) return;
-    e.preventDefault();
 
     const text = (e.target as HTMLElement).innerText || (e.target as HTMLInputElement).value;
     if (text)
         handleString(text, e.shiftKey);
-})
+}, {capture: true})
 
 addEventListener('keydown', e => {
     if (e.code === 'KeyC' && e.altKey) {
@@ -14,7 +13,7 @@ addEventListener('keydown', e => {
 
         handleString(str, e.shiftKey);
     }
-});
+}, {capture: true});
 
 function handleString(str: string, round: boolean) {
     const pxRegex = /(-?\d+[.|,]*\d*)\W*[px]*/gim
