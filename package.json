@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.json && cp manifest.json dist/",
+    "build": "tsc -p tsconfig.json && cp -r manifest.json assets dist/",
     "preview": "vite preview"
   },
   "devDependencies": {
