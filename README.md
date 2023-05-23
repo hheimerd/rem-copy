@@ -11,8 +11,6 @@ Select the text and/or click with the mouse wheel on any element with PX value (
 - Manifest v3
 
 ## installation
-1. download rem-copy.zip from https://github.com/hheimerd/rem-copy/releases
-1. extract to any directory
+1. download rem_copy.crx from https://github.com/hheimerd/rem-copy/releases
 1. open chrome://extension
-1. click install unpacked extension
-1. choose extracted directory
+1. drop downloaded file to browser (chrome://extension) window
