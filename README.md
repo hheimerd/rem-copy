@@ -14,3 +14,4 @@ Select the text and/or click with the mouse wheel on any element with PX value (
 1. download rem_copy.crx from https://github.com/hheimerd/rem-copy/releases
 1. open chrome://extension
 1. drop downloaded file to browser (chrome://extension) window
+2. restart browser
